@@ -2,5 +2,5 @@
 
 public interface IRepository : IBaseRepository
 {
-    IEnumerable<object> Query(string command, IDictionary<string, object?>? param = null);
+    Task<IEnumerable<object>> QueryAsync(string command, IDictionary<string, object?>? param = null);
 }

@@ -38,7 +38,7 @@ public sealed class QueryControllerTest
 
         //Act
         var response = await client
-            .PostAsync("/Api/Query",
+            .PostAsync("/Main/Query",
                 new StringContent(queryViewModel.SerializeObject(),
                     Encoding.UTF8,
                     MediaTypeNames.Application.Json));
@@ -98,7 +98,7 @@ public sealed class QueryControllerTest
 
         //Act
         var response = await client
-            .PostAsync("/Api/Query",
+            .PostAsync("/Main/Query",
                 new StringContent(queryViewModel.SerializeObject(),
                     Encoding.UTF8,
                     MediaTypeNames.Application.Json));

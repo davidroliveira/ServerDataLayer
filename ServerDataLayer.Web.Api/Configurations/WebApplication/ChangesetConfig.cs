@@ -5,10 +5,9 @@ namespace ServerDataLayer.Web.Api.Configurations.WebApplication;
 
 public static class WebApplicationConfig
 {
-    public static Microsoft.AspNetCore.Builder.WebApplication AddChangesets(this Microsoft.AspNetCore.Builder.WebApplication app)
+    public static void AddChangesets(this Microsoft.AspNetCore.Builder.WebApplication app)
     {
-        using var changeset = Handler.Handle<IDbChangeset>();
+        using var changeset = Handler.HandleAsync<IDbChangeset>().GetAwaiter().GetResult();
         changeset.Apply();
-        return app;
     }
 }

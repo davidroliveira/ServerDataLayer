@@ -36,11 +36,11 @@ public sealed class QueryUseCaseTest
             }
         };
 
-        var expected = repository.Query(SQL, queryViewModel.ToDictionary());
+        var expected = await repository.QueryAsync(SQL, await queryViewModel.ToDictionaryAsync());
         var useCase = new QueryUseCase(repository);
 
         //Act
-        var response = useCase.Execute(new QueryRequest(queryViewModel));
+        var response = await useCase.ExecuteAsync(new QueryRequest(queryViewModel));
 
         //Assert
         var result = response.Content;
@@ -94,11 +94,11 @@ public sealed class QueryUseCaseTest
             }
         };
 
-        var expected = repository.Query(sql, queryViewModel.ToDictionary());
+        var expected = await repository.QueryAsync(sql, await queryViewModel.ToDictionaryAsync());
         var useCase = new QueryUseCase(repository);
 
         //Act
-        var response = useCase.Execute(new QueryRequest(queryViewModel));
+        var response = await useCase.ExecuteAsync(new QueryRequest(queryViewModel));
 
         //Assert
         var result = response.Content;

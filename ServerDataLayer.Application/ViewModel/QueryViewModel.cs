@@ -5,8 +5,8 @@ public sealed class QueryViewModel
     public string Command { get; set; } = string.Empty;
     public IEnumerable<QueryParametersViewModel>? Parameters { get; set; }
 
-    public Dictionary<string, object?>? ToDictionary() => Parameters?
+    public Task<Dictionary<string, object?>?> ToDictionaryAsync() => Task.FromResult(Parameters?
         .ToDictionary(
             parameter => parameter.Name,
-            parameter => parameter.Value);
+            parameter => parameter.Value));
 }
