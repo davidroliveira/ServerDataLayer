@@ -1,6 +1,6 @@
-﻿using System.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using ServerDataLayer.Domain.Connection;
+using System.Data.SqlClient;
 
 namespace ServerDataLayer.Persistence.SqlServer.Connection;
 

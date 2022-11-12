@@ -12,6 +12,6 @@ public sealed class QueryUseCase : IUseCase<QueryRequest, QueryResponse>
     public async Task<QueryResponse> ExecuteAsync(QueryRequest request) => new(
         await _repository
             .QueryAsync(
-                request.Query.Command, 
+                request.Query.Command,
                 await request.Query.ToDictionaryAsync()));
 }

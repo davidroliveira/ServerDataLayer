@@ -1,9 +1,9 @@
-﻿using System.Text.Json;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ServerDataLayer.Application.UseCases;
 using ServerDataLayer.Application.ViewModel;
 using ServerDataLayer.Base.Common;
 using ServerDataLayer.Main;
+using System.Text.Json;
 
 namespace ServerDataLayer.Web.Api;
 
@@ -18,10 +18,10 @@ public sealed class MainController : ControllerBase
         {
             query.Parameters = query.Parameters?
                 .Select(parameter => new QueryParametersViewModel
-                    {
-                        Name = parameter.Name,
-                        Value = parameter.Value is JsonElement element ? element.ToObject() : null
-                    });
+                {
+                    Name = parameter.Name,
+                    Value = parameter.Value is JsonElement element ? element.ToObject() : null
+                });
 
             var handle = await Handler.HandleAsync<QueryUseCase>();
             var response = await handle.ExecuteAsync(new QueryRequest(query));

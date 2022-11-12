@@ -1,6 +1,6 @@
-﻿using System.Data;
+﻿using ServerDataLayer.Domain.Connection;
+using System.Data;
 using System.Data.SqlClient;
-using ServerDataLayer.Domain.Connection;
 
 namespace ServerDataLayer.Persistence.SqlServer.Connection;
 

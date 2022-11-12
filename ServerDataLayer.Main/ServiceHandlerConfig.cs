@@ -1,9 +1,9 @@
-﻿using System.Reflection;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using ServerDataLayer.Application.Contracts;
 using ServerDataLayer.Domain.Connection;
 using ServerDataLayer.Persistence.SqlServer.Connection;
 using ServerDataLayer.Persistence.SqlServer.Repositories;
+using System.Reflection;
 
 namespace ServerDataLayer.Main;
 

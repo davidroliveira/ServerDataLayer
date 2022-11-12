@@ -1,10 +1,10 @@
-﻿using System.Data;
+﻿using Dapper;
+using ServerDataLayer.Base.Common;
+using ServerDataLayer.Domain.Connection;
+using System.Data;
 using System.Data.SqlClient;
 using System.Reflection;
 using System.Text.RegularExpressions;
-using Dapper;
-using ServerDataLayer.Base.Common;
-using ServerDataLayer.Domain.Connection;
 
 namespace ServerDataLayer.Persistence.SqlServer.Connection;
 

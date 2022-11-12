@@ -30,7 +30,7 @@ public sealed class QueryUseCaseTest
             {
                 new()
                 {
-                    Name = "@codigo_local", 
+                    Name = "@codigo_local",
                     Value = 1
                 }
             }

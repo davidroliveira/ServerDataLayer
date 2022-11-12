@@ -13,6 +13,6 @@ public sealed class Repository : BaseRepository, IRepository
     public Task<IEnumerable<object>> QueryAsync(string command, IDictionary<string, object?>? param = null) => _session
         .Connection
         .QueryAsync<object>(
-            command, 
+            command,
             param);
 }

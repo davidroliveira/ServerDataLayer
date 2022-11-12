@@ -1,11 +1,11 @@
-﻿using System.Net;
-using System.Net.Mime;
-using System.Text;
-using Bogus;
+﻿using Bogus;
 using Newtonsoft.Json;
 using ServerDataLayer.Application.ViewModel;
 using ServerDataLayer.Base.Common;
 using ServerDataLayer.Base.Tests.Support;
+using System.Net;
+using System.Net.Mime;
+using System.Text;
 using Xunit;
 
 namespace ServerDataLayer.Web.Api.Tests.Unit;
@@ -78,7 +78,7 @@ public sealed class QueryControllerTest
                    inserted.codigo_universal, 
                    inserted.nome;";
 
-        var queryViewModel = new QueryViewModel() 
+        var queryViewModel = new QueryViewModel()
         {
             Command = sql,
             Parameters = new List<QueryParametersViewModel>()
