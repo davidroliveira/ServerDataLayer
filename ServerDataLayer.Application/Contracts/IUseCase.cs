@@ -1,4 +1,4 @@
-﻿namespace ServerDataLayer.Application.Contracts;
+﻿namespace Server.Application.Contracts;
 
 public interface IUseCase<in TRequest, TResponse>
     where TRequest : IRequest

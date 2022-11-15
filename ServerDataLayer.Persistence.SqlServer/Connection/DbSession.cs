@@ -1,8 +1,8 @@
-﻿using ServerDataLayer.Domain.Connection;
+﻿using Server.Domain.Connection;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ServerDataLayer.Persistence.SqlServer.Connection;
+namespace Server.Persistence.SqlServer.Connection;
 
 public sealed class DbSession : IDbSession
 {

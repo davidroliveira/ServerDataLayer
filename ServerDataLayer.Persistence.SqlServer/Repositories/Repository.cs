@@ -1,8 +1,8 @@
 ﻿using Dapper;
-using ServerDataLayer.Domain.Connection;
-using ServerDataLayer.Domain.Repositories;
+using Server.Domain.Connection;
+using Server.Domain.Repositories;
 
-namespace ServerDataLayer.Persistence.SqlServer.Repositories;
+namespace Server.Persistence.SqlServer.Repositories;
 
 public sealed class Repository : BaseRepository, IRepository
 {

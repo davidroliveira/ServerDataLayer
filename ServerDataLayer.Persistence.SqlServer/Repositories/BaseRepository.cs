@@ -1,5 +1,5 @@
-﻿using ServerDataLayer.Domain.Repositories;
+﻿using Server.Domain.Repositories;
 
-namespace ServerDataLayer.Persistence.SqlServer.Repositories;
+namespace Server.Persistence.SqlServer.Repositories;
 
 public abstract class BaseRepository : IBaseRepository { }

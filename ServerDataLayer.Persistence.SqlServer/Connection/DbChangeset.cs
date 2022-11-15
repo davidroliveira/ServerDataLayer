@@ -1,12 +1,12 @@
 ﻿using Dapper;
-using ServerDataLayer.Base.Common;
-using ServerDataLayer.Domain.Connection;
+using Server.Base.Common;
+using Server.Domain.Connection;
 using System.Data;
 using System.Data.SqlClient;
 using System.Reflection;
 using System.Text.RegularExpressions;
 
-namespace ServerDataLayer.Persistence.SqlServer.Connection;
+namespace Server.Persistence.SqlServer.Connection;
 
 public sealed class DbChangeset : IDbChangeset
 {

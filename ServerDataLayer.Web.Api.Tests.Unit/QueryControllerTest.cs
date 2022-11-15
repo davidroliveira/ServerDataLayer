@@ -1,14 +1,14 @@
 ﻿using Bogus;
 using Newtonsoft.Json;
-using ServerDataLayer.Application.ViewModel;
-using ServerDataLayer.Base.Common;
-using ServerDataLayer.Base.Tests.Support;
+using Server.Application.ViewModel;
+using Server.Base.Common;
+using Server.Base.Tests.Support;
 using System.Net;
 using System.Net.Mime;
 using System.Text;
 using Xunit;
 
-namespace ServerDataLayer.Web.Api.Tests.Unit;
+namespace Server.Web.Api.Tests.Unit;
 
 public sealed class QueryControllerTest
 {

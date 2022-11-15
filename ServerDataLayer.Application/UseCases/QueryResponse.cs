@@ -1,5 +1,5 @@
-﻿using ServerDataLayer.Application.Contracts;
+﻿using Server.Application.Contracts;
 
-namespace ServerDataLayer.Application.UseCases;
+namespace Server.Application.UseCases;
 
 public sealed record QueryResponse(IEnumerable<object> Content) : IResponse;

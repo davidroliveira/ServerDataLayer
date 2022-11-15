@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace ServerDataLayer.Main;
+namespace Server.Main;
 
 public static class Handler
 {

@@ -1,4 +1,4 @@
-﻿namespace ServerDataLayer.Application.ViewModel;
+﻿namespace Server.Application.ViewModel;
 
 public sealed class QueryViewModel
 {

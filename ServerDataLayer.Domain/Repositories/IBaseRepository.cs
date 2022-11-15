@@ -1,3 +1,3 @@
-﻿namespace ServerDataLayer.Domain.Repositories;
+﻿namespace Server.Domain.Repositories;
 
 public interface IBaseRepository { }

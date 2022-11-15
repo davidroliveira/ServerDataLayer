@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ServerDataLayer.Application.UseCases;
-using ServerDataLayer.Application.ViewModel;
-using ServerDataLayer.Base.Common;
-using ServerDataLayer.Main;
+using Server.Application.UseCases;
+using Server.Application.ViewModel;
+using Server.Base.Common;
+using Server.Main;
 using System.Text.Json;
 
-namespace ServerDataLayer.Web.Api;
+namespace Server.Web.Api;
 
 [ApiController]
 [Route("[controller]/[action]")]

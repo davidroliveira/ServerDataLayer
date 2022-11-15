@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
-using ServerDataLayer.Domain.Connection;
+using Server.Domain.Connection;
 
-namespace ServerDataLayer.Persistence.SqlServer.Connection;
+namespace Server.Persistence.SqlServer.Connection;
 
 public sealed class DbSettings : IDbSettings
 {

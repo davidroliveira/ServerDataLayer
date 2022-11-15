@@ -1,3 +1,3 @@
-﻿namespace ServerDataLayer.Application.Contracts;
+﻿namespace Server.Application.Contracts;
 
 public interface IResponse { }

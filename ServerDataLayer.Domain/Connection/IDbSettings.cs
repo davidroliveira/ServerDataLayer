@@ -1,4 +1,4 @@
-﻿namespace ServerDataLayer.Domain.Connection;
+﻿namespace Server.Domain.Connection;
 
 public interface IDbSettings
 {

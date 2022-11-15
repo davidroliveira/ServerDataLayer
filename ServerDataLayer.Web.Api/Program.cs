@@ -1,8 +1,8 @@
 using NLog;
 using NLog.Web;
-using ServerDataLayer.Main;
-using ServerDataLayer.Web.Api.Configurations.WebApplication;
-using ServerDataLayer.Web.Api.Formatter;
+using Server.Main;
+using Server.Web.Api.Configurations.WebApplication;
+using Server.Web.Api.Formatter;
 
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");

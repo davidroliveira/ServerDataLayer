@@ -1,13 +1,13 @@
 ﻿using Bogus;
 using Microsoft.Extensions.DependencyInjection;
-using ServerDataLayer.Application.UseCases;
-using ServerDataLayer.Application.ViewModel;
-using ServerDataLayer.Base.Common;
-using ServerDataLayer.Base.Tests.Support;
-using ServerDataLayer.Domain.Repositories;
+using Server.Application.UseCases;
+using Server.Application.ViewModel;
+using Server.Base.Common;
+using Server.Base.Tests.Support;
+using Server.Domain.Repositories;
 using Xunit;
 
-namespace ServerDataLayer.Application.Tests.Unit;
+namespace Server.Application.Tests.Unit;
 
 public sealed class QueryUseCaseTest
 {

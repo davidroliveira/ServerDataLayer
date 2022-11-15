@@ -7,8 +7,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="ServerDataLayer.Web.Api.Tests.Unit" />
-		<InternalsVisibleTo Include="ServerDataLayer.Application.Tests.Unit" />
+		<InternalsVisibleTo Include="Server.Web.Api.Tests.Unit" />
+		<InternalsVisibleTo Include="Server.Application.Tests.Unit" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -18,9 +18,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\ServerDataLayer.Application\ServerDataLayer.Application.csproj" />
-		<ProjectReference Include="..\ServerDataLayer.Domain\ServerDataLayer.Domain.csproj" />
-		<ProjectReference Include="..\ServerDataLayer.Main\ServerDataLayer.Main.csproj" />
+		<ProjectReference Include="..\Server.Application\Server.Application.csproj" />
+		<ProjectReference Include="..\Server.Domain\Server.Domain.csproj" />
+		<ProjectReference Include="..\Server.Main\Server.Main.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

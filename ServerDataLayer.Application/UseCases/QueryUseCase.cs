@@ -1,7 +1,7 @@
-﻿using ServerDataLayer.Application.Contracts;
-using ServerDataLayer.Domain.Repositories;
+﻿using Server.Application.Contracts;
+using Server.Domain.Repositories;
 
-namespace ServerDataLayer.Application.UseCases;
+namespace Server.Application.UseCases;
 
 public sealed class QueryUseCase : IUseCase<QueryRequest, QueryResponse>
 {

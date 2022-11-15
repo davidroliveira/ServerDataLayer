@@ -1,6 +1,6 @@
-﻿using ServerDataLayer.Application.Contracts;
-using ServerDataLayer.Application.ViewModel;
+﻿using Server.Application.Contracts;
+using Server.Application.ViewModel;
 
-namespace ServerDataLayer.Application.UseCases;
+namespace Server.Application.UseCases;
 
 public sealed record QueryRequest(QueryViewModel Query) : IRequest;

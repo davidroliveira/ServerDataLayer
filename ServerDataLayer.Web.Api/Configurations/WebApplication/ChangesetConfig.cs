@@ -1,7 +1,7 @@
-﻿using ServerDataLayer.Domain.Connection;
-using ServerDataLayer.Main;
+﻿using Server.Domain.Connection;
+using Server.Main;
 
-namespace ServerDataLayer.Web.Api.Configurations.WebApplication;
+namespace Server.Web.Api.Configurations.WebApplication;
 
 public static class WebApplicationConfig
 {
